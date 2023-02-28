@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* header */
+.buttonStyled {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #92ece1;
+}
+
+.buttonStyled::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.buttonStyled:hover::before {
+    width: 105%;
+}
+
+.buttonStyled:hover {
+    color: #111;
+}
+
+.backgroundHeader {
+    background-image: url("https://images.ctfassets.net/pdf29us7flmy/6DlGmQnbGA55JqsuhBCd1E/1cd8c47139818383bf8d3802f970bc3e/CV-TEMPLATES-FINAL-JULY-01.png");
+}
+
+.headerSize {
+    height: 350px;
+}
+
+/* main */
+.mainBackground {
+    background-color: #4b4471;
+}
+
+.mainSize {
+    padding: 25px;
+}
+
+.tittlePadding {
+    padding: 25px;
+}
+
+.mainPadding {
+    padding: 150px;
+}
+
+.mainName {
+    height: 100%;
+    text-shadow: 2px 2px #111;
+}
+
+.imageBackGround {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 500px;
+}
+
+.mainText {
+    color: aliceblue;
+}
+
+/* footer */
+.goUp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 25px;
+    border-color: #17C3B2;
+    border-style: solid;
+    text-decoration: none;
+    z-index: 100;
+    background-color: #4b4471;
+}
+
+.fa-arrow-up {
+    padding-top: 15px;
+}
+
+.goUp a {
+    color: #17C3B2;
+}
+
+.backgroundFooter {
+    background-color: rgb(58, 57, 57);
+}
+
+/* custom rules */
+.lineBreak {
+    white-space: pre;
+}
+
+.textDecorationNone {
+    text-decoration: none;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2s;
+}
